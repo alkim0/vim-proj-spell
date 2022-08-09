@@ -7,7 +7,7 @@ Install vim-proj-spell using either
 [pathogen](https://github.com/tpope/vim-pathogen) or
 [vundle](https://github.com/VundleVim/Vundle.vim). For example, for vundle, add the following lines to your ``~/.vimrc``:
 
-    Plugin 'alkim0/vim-insert-timestamp'
+    Plugin 'alkim0/vim-proj-spell'
 
 ## Usage
 Create a `.spell` directory in your project root directory, then add a wordlist file.
