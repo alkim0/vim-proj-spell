@@ -20,12 +20,12 @@ If you manually changed the wordlist files in `.spell`, you can call `:ProjSpell
 Because, vim-proj-spell messes with the `spellfile` setting, if you do not have `spellfile` specified, when you use `zg`, the word may not be saved to a permanent location.
 To deal with this, either explicitly set your `spellfile`, or remap:
 ```
-silent nnoremap zg :ProjSpellAddWordGlobal expand('<cword>')<cr>
+nnoremap <silent> zg :ProjSpellAddWordGlobal expand('<cword>')<cr>
 ```
 
 I like `zG` to save words to the project-specific wordlist, so I also have:
 ```
-silent nnoremap zG :ProjSpellAddWordProj expand('<cword>')<cr>
+nnoremap <silent> zG :ProjSpellAddWordProj expand('<cword>')<cr>
 ```
 
 Note that this plugin will likely only work for Unix-like systems.
