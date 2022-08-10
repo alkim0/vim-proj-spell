@@ -3,11 +3,10 @@
 vim-proj-spell is a vim plugin which enables project-specific spell files
 
 ## Installing
-Install vim-proj-spell using either
-[pathogen](https://github.com/tpope/vim-pathogen) or
-[vundle](https://github.com/VundleVim/Vundle.vim). For example, for vundle, add the following lines to your ``~/.vimrc``:
+Install vim-proj-spell using one of the many plugin managers our there.
+Personally, I use [vim-plug](https://github.com/junegunn/vim-plug), so my `~/.vimrc` has this line:
 
-    Plugin 'alkim0/vim-proj-spell'
+    Plug 'alkim0/vim-proj-spell'
 
 ## Usage
 Create a `.spell` directory in your project root directory, then add a wordlist file.
