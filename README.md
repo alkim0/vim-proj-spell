@@ -3,7 +3,7 @@
 vim-proj-spell is a vim plugin which enables project-specific spell files
 
 ## Installing
-Install vim-proj-spell using one of the many plugin managers our there.
+Install vim-proj-spell using any one of the many plugin managers out there.
 Personally, I use [vim-plug](https://github.com/junegunn/vim-plug), so my `~/.vimrc` has this line:
 
     Plug 'alkim0/vim-proj-spell'
