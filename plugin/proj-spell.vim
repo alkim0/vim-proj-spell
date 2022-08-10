@@ -33,7 +33,7 @@ function! s:add_new_word_global(word)
   endif
 
   silent call writefile([a:word], l:global_spellfile, "a")
-  silent execute 'mkspell! ' . l:global_spellfile
+  silent! execute 'mkspell! ' . l:global_spellfile
   echo a:word . ' added to ' . l:global_spellfile
 endfunc
 
@@ -64,7 +64,7 @@ function! s:proj_spell_hook()
   let l:new_spellfile = py3eval('proj_spell.compile_proj_spell(vim.eval("l:current_dir"), vim.eval("g:proj_spell_dir"))')
 
   if l:new_spellfile != ''
-    silent execute 'mkspell! ' . l:new_spellfile
+    silent! execute 'mkspell! ' . l:new_spellfile
   endif
 
   let b:combined_spellfile = s:combine(s:orig_spellfile, l:new_spellfile)
